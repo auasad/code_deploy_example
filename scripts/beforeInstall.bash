@@ -3,7 +3,8 @@
 # I want to make sure that the directory is clean and has nothing left over from
 # previous deployments. The servers auto scale so the directory may or may not
 # exist.
-if [ -d /var/www/release ]; then
-    rm -rf /var/www/release
+if [ -d /var/www/html/appspec.yml ]; then
+    rm -rf /var/www/html/appspec.yml
 fi
-mkdir -vp /var/www/release
+mkdir -vp /var/www/html/appspec.yml
+
