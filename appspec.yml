@@ -19,6 +19,5 @@ hooks:
     - location: scripts/startapache.sh
       runas: root
    AfterInstall:
-    - location: scripts/afterInstall.bash
     - location: scripts/restartapache.sh
       runas: root
